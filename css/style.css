@@ -1,0 +1,258 @@
+
+.header {
+  background-color: #393939;
+  color: white;
+  display: flex;
+  height: 90px; /* <---- solo agregamos esta linea */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+   /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+ 
+}
+
+.header .logoContainer {
+    height: 50px;
+  
+  }
+.header .logoContainer .logo {
+    height: inherit;
+  }
+
+.header ol {
+  /* .header ol hereda de .menu */
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.header a {
+  /* .header a hereda de .header ol li */
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; /* <---- solo agregamos esta linea */
+}
+
+.menu {
+  /* .menu hereda de .header */
+  height: inherit;
+}
+
+.hero {
+  height: 300px;
+  background-color: #393939;
+  background-image: url("../images/mario.jpg");
+  background-size: 250px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+}
+figure {
+  margin: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+
+h1 {
+    margin:0px;
+  font-size: 40px;
+  line-height: 1.5; /*Alto de la linea*/
+  letter-spacing: -0.2px; /*Espaciado de letras , 20 % menos de un pixel*/
+  /*text-transform: uppercase;*/ /*Pone texto en miniusculas o mayusculas*/
+  /*text-decoration: underline;*/ /*Decoracion del texto , por ejemplo subrayado*/
+  color: white;
+}
+h1 strong {
+  color: #026fff;
+}
+h2{
+    color: #026fff;  
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    font-size:24px;
+    margin-bottom: 40px;
+}
+
+.profiles {
+  background-color: #fafafa;
+  padding: 20px;
+  /*display: flex;*/ /*Usa el modo flex a los hijos*/
+  /*flex-direction: row;*/ /*Direccion de flex de los elementos*/
+  /*flex-wrap: wrap; */ /*Wap ayuda  saltar de linea si el espacio se acaba*/
+}
+.profile {
+  /*flex-shrink: 0;*/ /*Esta propiedad nos ayuda a impedir la reduccion o reducir la reduccion del tamañano del elemento cuando se usa flex*/
+  /* align-self: flex-start;*/ /*Alinea un solo elemento hijo*/
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-sizing: border-box;*/ /*Para que tome el width y heigh como tamñaos maximos si importar margin y padding*/
+}
+.profile-image{
+    width: 500px;
+    height: 300px;
+}
+.profile-title{
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+.profile-desc{
+    margin:10px 0px;
+    font-size:20px
+}
+
+.profile-details {
+  width: 500px;
+}
+.profile-imageContainer {
+  width: 500px;
+}
+
+.footer{
+    background-color:#393939 ;
+    color:white;
+    display: flex;
+    align-items:center;
+}
+
+.footer img{
+vertical-align: middle;
+width: 40px;
+height: 40px;
+}
+.knowledges{
+    background-color: #fafafa;
+    padding: 20px;
+    
+}
+.allKnowledges{
+    display: flex;
+    justify-content: space-between;
+}
+
+.knowledge{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    /*justify-content: space-between;*/
+}
+.knowledges h2{
+    margin-top:0px;
+}
+.knowledge-title{
+    font-size: 30px;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+.knowledge-tech{
+    margin:10px 0px;
+    
+}
+.knowledge-exp{
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+.knowledge-desc{
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+.knowledge img{
+    width: 200px;
+    height: 120px;
+}
+.contacts{
+    background-color: #026fff;
+    color:white;
+    height: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.social{
+
+    
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.social-link.linkedin{
+    background-image: url('../images/linkedin.png');
+    background-size:50px 50px;
+}
+
+.form-email input{
+    border-color:gray;
+    padding: 5px 5px 5px 25px;
+    border-style: solid;
+    border-radius: 5px;
+    background-size: 15px 15px;
+    background-image: url('../images/envelope.svg');
+    background-position-y: center ;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+
+}
+
+.form-email button{
+    display: block;
+    margin-top:10px;
+    background-color:transparent;
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 30px;
+    
+}
+
+.form-email h3{
+    font-family: "Source Sans Pro", sans-serif;
+}
