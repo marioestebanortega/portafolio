@@ -2,10 +2,11 @@
 (() => {
     const ipad = window.matchMedia('screen and (max-width: 767px)');
 
-        console.log('Se ejecuto');
+        
         const menu = document.querySelector('.menu');
         const burgerMenu = document.querySelector('#burger-menu');
         const hideShow = () => {
+            console.log('Se ejecuto');
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
 
@@ -18,7 +19,7 @@
         
     
     const validation = (event) => {
-        if (ipad.matches) {
+        if (event.matches) {
             burgerMenu.addEventListener(
                 'click',
                 hideShow
@@ -29,4 +30,5 @@
         }
     }
     ipad.addListener(validation);
+    validation(ipad);
 })()

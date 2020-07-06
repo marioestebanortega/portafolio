@@ -344,6 +344,7 @@ h2 {
   .header {
     display: block;
     height: auto;
+    padding-bottom: 40px;
   }
   .header ol {
     display: block;
@@ -373,7 +374,7 @@ h2 {
     margin-bottom: 0.3em;
   }
   .profile-desc {
-    font-size: 1em;
+    font-size: 1.7em;
     margin: 0.4em 0;
   }
   .knowledge-detail {
@@ -413,6 +414,8 @@ h2 {
   .hero{
     height: auto;
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .hero-image{
     position: absolute;
@@ -459,7 +462,12 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-
+  .hero{
+    height: 144px;
+  }
+  h1{
+    font-size: 1.3em;
+  }
   .profile-details {
     font-size: 12px;
   }
@@ -469,12 +477,10 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
+
   h1{
-    font-size: 1em;
-  }
-  .hero{
-    height: 144px;
-  }
+    font-size: 0.9em;
+  }  
   .contacts{
     padding-bottom: 1em;
     padding-top:0.5em;
