@@ -19,6 +19,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-171840911-1"
     ></script>
+    <script src="./js/mailSend.js" type="application/javascript"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -296,11 +297,12 @@
     <!--Fin Herramientas-->
     <section id="trabajemosJuntos" class="contacts">
       <div class="container">
-        <form class="form-email" action="/subscripcion/">
+        <form class="form-email" onsubmit="submitMail(event)">
           <h3>¿Trabajamos juntos?</h3>
-          <input type="text" placeholder="Dejame tu email" />
+         <!--<input type="text" placeholder="Dejame tu email" />--> 
           <div class="wrapperButton">
-            <button>Enviar</button>
+            <button type="submit">Contactame
+              </button>
           </div>
         </form>
         <div class="social">
