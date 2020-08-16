@@ -138,6 +138,9 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 .burger-button {
@@ -191,7 +194,7 @@
 }
 
 .header .logoContainer {
-  height: 50px;
+  height: 40px;
 }
 .header .logoContainer .logo {
   height: inherit;
@@ -376,6 +379,14 @@ h2 {
 }
 .knowledge-second {
   width: 50%;
+}
+.knowledge-second a {
+  text-decoration: none;
+  font-size:1.5em;
+  color:black;
+}
+.knowledge-second a:hover {
+  color:blue;
 }
 .knowledges h2 {
   margin-top: 0px;
